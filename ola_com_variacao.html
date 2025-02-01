@@ -1,0 +1,27 @@
+<html>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script>
+        var idioma = prompt("Por favor, informe o código do idioma\npt\nen\nfr\nes")
+        var variacao = prompt('Por favor, informe a variação: ')
+
+        // pt-br = Olá!
+        // pt-pt = Olá!
+        // en-us = Hi!
+        // en-gb = Hello!
+
+        //     true/false   &&               true/false
+        // (idioma == "pt") && (variacao == "br" || variacao == "pt")
+
+        if(((idioma == "pt") && (variacao == 'br' || variacao == 'pt'))){
+            alert('Olá!')
+        } else if (idioma == "en" && variacao == 'us'){
+            alert("Hi!")
+        } else if (idioma == "en" && variacao == 'gb'){
+            alert('Hello!')
+        } else {
+            alert("Informe um código de idioma e uma variação válida!")
+        }
+
+
+    </script>
+</html>
