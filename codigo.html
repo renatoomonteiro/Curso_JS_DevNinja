@@ -1,0 +1,127 @@
+<!-- Precedência dos operadores -->
+
+<!-- # Comparações
+
+Servem para comparar dois valores e/ou variáveis.
+
+- Igual - `==`
+- Diferente - `!=`
+- Menor - `<`
+- Menor igual - `<=`
+- Maior - `>`
+- Maior igual - `>=`
+
+Uma comparação sempre retornará verdadeiro ou falso:
+
+```javascript
+1 > 2
+1 == 1
+"A" == "A"
+"A" < "B"
+```
+
+Para variáveis:
+
+```javascript
+const idade = 16
+const limite = 18
+
+idade >= limite
+``` -->
+
+<!-- # Comparação estrita (idêntico)
+
+O JavaScript tenta converter dados, por isso o uso do `==` pode ocasionar problemas.
+
+Ex:
+
+```javascript
+"1" == 1
+1 == true
+null == undefined
+```
+
+Para solucionar este problema utilizamos a comparação estrita (idêntico).
+
+```javascript
+"1" === 1
+1 === true
+null === undefined
+null !== undefined
+``` -->
+
+
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    </head>
+    <script>
+        //Operadores básicos: * + / - 
+        //precedência (), */,+-
+        //média = soma dos termos / quantidade dos termos
+        const media = (10+10+10) / 3
+        console.log(media)
+
+        //contadores ...
+        //num = num + 1 ou
+        //num++
+        let num = 0
+        //num = num + 1 // 0+1
+        //num++ // 1+1
+        //num-- // 2+1
+        //++num
+        //--num
+        console.log("num ", ++num)
+        console.log("num ", ++num)
+        console.log("num ", num)
+
+        num += 2 //num = num + 2
+        console.log("num ", num)
+        num *= 2 //num = num * 2
+        console.log("num ", num)
+
+        //If
+        console.log(0 ? "Verdadeiro" : "falso")
+        console.log("" ? "Verdadeiro" : "falso")
+        console.log(null ? "Verdadeiro" : "falso")
+
+        //Lógicos
+        //OU (OR)
+        console.log(false || false) // false
+        console.log(true || false) // true
+        console.log(false || true) // true
+        console.log(true || true) // true
+
+        //E (AND)
+        console.log(false && false) //false
+        console.log(true && false) //false
+        console.log(false && true) //false
+        console.log(true && true) //false
+
+        //misto, mais de dois parâmetros de operadores lógicos
+        console.log(false && false && true) //false
+        console.log(false || false || true) //true
+
+        console.log(false || (false && true)) //true
+        //Precedência
+        // && precede o ||
+
+        //Precedência forçada
+        console.log((false || true) && true) // true
+
+        //Negação not: !
+
+        //!false // true
+        //!true // false
+        //!(10 < 20) // !true = false
+
+        console.log(!false) // true 
+        console.log(!true) // false
+        console.log(!(10 < 20)) // false
+
+
+        //Resultado de uma expressão (comparação) é boolean
+        console.log(23 < 24 && "A" == "A") // true
+    </script>
+</html>
