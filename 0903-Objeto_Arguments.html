@@ -1,0 +1,26 @@
+<html>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script>
+
+        // Função com arguments. Muito útil quando não se sabe a quantidade de 
+        // parâmetros que a função possui. Sejam eles obrigatórios ou opcionais
+        function sum(n1,n2,n3,n4){
+            let res = 0;
+            
+            //Arguments
+            //console.log(arguments)
+            
+            //Percorrer a função em busca de todos os argumentos que ela possui
+            for(const n of arguments){
+                res += n;
+            }
+            return res;
+        }
+        
+        //Exibe a função sem informar parâmetro algum
+        console.log(sum())
+
+        // Exibe o resultado da função com os parâmetros informados
+        console.log(sum(1,1,3,10,4,1,3,4))
+    </script>
+</html>
