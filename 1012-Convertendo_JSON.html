@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertendo JSON</title>
+</head>
+<script>
+    /*
+    JSON - JavaScript Object Notation
+    JSON.stringfy()
+    JSON.parse()
+    */
+
+   const people = [
+    {
+        id:1,
+        name: "Felipe",
+        lastName:"Fontoura",
+        bornDate: new Date(1982, 1,18),
+        address:{
+            city: "São José dos Campos",
+        },
+    },
+    {
+        id: 2,
+        name: "Eduardo",
+        lastName: "Moraes",
+        bornDate: new Date(2001, 3, 5),
+        address: {
+            city: "Recife",
+        },
+    },
+   ]
+    //Conversão de objeto String para JSON
+    console.log(JSON.stringify(people));
+
+    //Conversão de JSON para Objeto String
+    console.log(JSON.parse(people));
+
+
+</script>
+<body>
+    
+</body>
+</html>

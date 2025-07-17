@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arredondamento de Casas Decimais</title>
+
+    <script>
+
+        let value = 1234.44;
+
+        console.log(value.toFixed(1));
+        console.log(Math.ceil(value));
+        console.log(Math.floor(value));
+        console.log(Math.round(value));
+        console.log(
+            new Intl.NumberFormat("pt-BR",{ //idioma português do Brasil
+                style: "currency", //estilo moeda
+                currency: "BRL", //Moeda brasileira
+            }).format(value)
+        );
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
