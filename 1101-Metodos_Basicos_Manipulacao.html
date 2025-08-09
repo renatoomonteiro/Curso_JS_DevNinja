@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos de Manipulação</title>
+</head>
+<body>
+    <script>
+        let people = ["Felipe", "André", "Paulo","Jonny", "Marcelo"] ;
+
+       //Exibir o segundo elemento
+       //Retornar elementos espíficos do Array
+        console.log(people[2]);
+       //Exibir o tamanho do array
+        console.log(people[people.length-1]);
+        //Retornar "fatias" de um array (exibir a partir do elemento 2 do array)
+        console.log(people.slice(2));
+        //Exibir do elemento que está na posição 1 até a quantidade 3 de elementos
+        console.log(people.slice(1,4));
+        //Adicionar novos elementos no fim do array
+        people.push("Ana");
+        console.log(people);
+        //Adicionar novos elementos no início do array
+        people.unshift("Maria")        ;
+        console.log(people);
+        //Remover elementos no fim do array (início e fim)
+        people.pop();
+        //Exibir o elemento removido
+        console.log(people.pop());
+        //Exibir o array sem o elemento removido
+        console.log(people);
+        //Retornar o elemento removido no início do array
+        console.log('Elemento removido do array: ',people.shift());
+        //Exibir o array sem o elemento removido
+        console.log(people);
+        //Remover fatias de um array (remove dois elementos a partir do elemento 1)
+        people.splice(1,2);
+        console.log(people);
+        //Retornar o índice de um elemento
+        let index = people.indexOf("Jonny");
+        console.log(index);
+    </script>
+</body>
+</html>
