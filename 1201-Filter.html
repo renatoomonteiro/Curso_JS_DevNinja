@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<body>
+<script>
+    const numbers = [10,18,1,15];
+
+    // let res = [];
+
+    // for(const n of numbers){
+    //     if(n>10){
+    //         res.push(n);
+    //     }
+    // }
+
+    //console.log(res);
+
+    // const gt10 = function(item){
+    //     return item >10; //true or false
+    // }
+
+    // let res = numbers.filter(function(item){
+    //     return item > 10;
+    // });
+
+    let res = numbers.filter((item) => item > 10)
+    console.log(res);
+
+    const people = [
+        {nome:"Felipe", gender:"M", age:40 },
+        {nome:"Paulo", gender:"M",age:14 },
+        {nome:"Amanda", gender:"F",age:18 }
+    ]
+
+    const m = people.filter((p)=>p.age >=18)
+
+    const n = people.filter((p) =>p.age >= 18 && p.gender === "M");
+    console.log(n);
+
+    const x = people.filter(
+        (p) =>p.age >= 18 && p.age <= 28 && p.gender === "M");
+    console.log(x);
+
+</script>    
+</body>
+</html>

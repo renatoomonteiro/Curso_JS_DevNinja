@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce</title>
+</head>
+<body>
+    <script>
+        let values = [1.5, 2,4,10]
+
+        // function callback(acumulator, currentValue, index, array){
+        //     console.log(`acumulator`, acumulator);
+        //     console.log(`currentValue`, currentValue);
+        //     console.log(`index`, index);
+        //     console.log(`array`, array);
+        //     console.log("---")
+
+        //     return acumulator + 1;
+        // }
+
+        // values.reduce(callback,0);
+
+        // function soma(total, item){
+        //     total + item;
+        // }
+
+        // let sum = values.reduce((total, item) => total + item,0);
+        // console.log("sum",sum);
+
+        // let avg = values.reduce(
+        //     (total, item, index) => (total + item) / (index +1),
+        //     0
+        // )
+        // console.log(avg);
+
+        // let double = values.reduce((total, item) => total.concat(item*2),[])
+        // console.log("double",double);
+
+        let newValues = values.reduce((total, item) => {
+            console.log("---");
+            console.log("item",item);
+            if(item > 2){
+                total.push(item);
+            }
+
+            console.log("total",total);
+
+            return total;
+        },[]);
+        console.log("newValues",newValues);
+
+    </script>
+</body>
+</html>
